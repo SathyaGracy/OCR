@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                >
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bottom_layout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/title_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <com.zeyaly.extractor.utils.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Create Account"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_16sdp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title_layout"
+                            android:layout_marginTop="@dimen/_40sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/user_name_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.zeyaly.extractor.utils.CustomTextViewBold
+                                    android:id="@+id/title_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Username"
+                                    android:textColor="@color/txt_full_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.zeyaly.extractor.utils.CustomEditTextviewSemiLight
+                                    android:id="@+id/username_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/title_username"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="georgeywill"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:inputType="text"
+                                    android:maxLength="20"
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/txt_medium_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <View
+                                    android:id="@+id/v1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_below="@+id/username_edt"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@color/ViewColor" />
+
+                                <com.zeyaly.extractor.utils.CustomSemiBoldTextview
+                                    android:id="@+id/error_txt_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/v1"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:text="Username"
+                                    android:textColor="@color/button_color"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/email_id_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/user_name_layout"
+                                android:layout_marginTop="@dimen/_15sdp">
+
+                                <com.zeyaly.extractor.utils.CustomTextViewBold
+                                    android:id="@+id/title_email_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email ID"
+                                    android:textColor="@color/txt_full_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.zeyaly.extractor.utils.CustomEditTextviewSemiLight
+                                    android:id="@+id/email_id_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/title_email_id"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="georgeywilliams@gmail.com"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:inputType="text"
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/txt_medium_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <View
+                                    android:id="@+id/v2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_below="@+id/email_id_edt"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@color/ViewColor" />
+
+
+
+                                <com.zeyaly.extractor.utils.CustomSemiBoldTextview
+                                    android:id="@+id/error_txt_email_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/v2"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:text="Username"
+                                    android:textColor="@color/button_color"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/mobile_number_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/email_id_layout"
+                                android:layout_marginTop="@dimen/_15sdp">
+
+                                <com.zeyaly.extractor.utils.CustomTextViewBold
+                                    android:id="@+id/mobile_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mobile"
+                                    android:textColor="@color/txt_full_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.zeyaly.extractor.utils.CustomEditTextviewSemiLight
+                                    android:id="@+id/mobile_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/mobile_text"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_30sdp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="+91 923456789"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:maxLength="13"
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/txt_medium_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <View
+                                    android:id="@+id/v4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_below="@+id/mobile_edt"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@color/ViewColor" />
+
+                                <com.zeyaly.extractor.utils.CustomSemiBoldTextview
+                                    android:id="@+id/error_txt_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/v4"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:text="Username"
+                                    android:textColor="@color/button_color"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+
+
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </androidx.core.widget.NestedScrollView>
+
+
+                <RelativeLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/signup_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_70sdp"
+                        android:layout_marginRight="@dimen/_70sdp"
+                        android:background="@drawable/button_lessres"
+                        android:elevation="@dimen/_2sdp"
+                        android:outlineAmbientShadowColor="@color/button_color"
+                        android:outlineSpotShadowColor="@color/button_color">
+
+                        <com.zeyaly.extractor.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Log In"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </RelativeLayout>
+
+                    <com.zeyaly.extractor.utils.CustomTextViewBold
+                        android:id="@+id/bottom_have_Account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/signup_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Skip"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorPrimary"/>
+            <!--shadow Color-->
+        </shape>
+    </item>
+
+    <item
+        android:left="0.2dp"
+        android:right="0.2dp"
+        android:top="0.2dp"
+        android:bottom="0.2dp">
+        <shape android:shape="oval">
+
+            <stroke android:color="@color/txt_medium_color" android:width="@dimen/_2sdp"/>
+            <solid android:color="@color/colorPrimary"/>//Background Color
+        </shape>
+    </item>
+</layer-list>

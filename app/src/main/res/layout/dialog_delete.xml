@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background_heading">
+
+        <com.zeyaly.extractor.utils.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/text"
+            android:textSize="@dimen/_13sdp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/title_layout"
+       android:background="@color/back_ground_color"
+        android:padding="10dp">
+
+        <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+           android:gravity="center"
+            android:text="@string/alert"
+            android:lineSpacingExtra="5dp"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/grey_border_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/close_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/r1"
+
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <com.zeyaly.extractor.utils.CustomTextViewBold
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:background="@drawable/button_one_side_radi_white"
+            android:textColor="@color/txt_full_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorPrimary" />
+
+        <com.zeyaly.extractor.utils.CustomTextViewBold
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/button_one_side_radi_red"
+            android:text="Delete"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nex"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_lessres"
+            android:layout_height="@dimen/_290sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/textContent"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="Text Here...."
+                    android:textColorHint="@color/txt_medium_color"
+                    android:textColor="@color/txt_full_color"
+                    android:layout_height="match_parent">
+
+                </com.zeyaly.extractor.utils.CustomTextViewSemiLight>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout
+
+            android:layout_below="@+id/nex"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+                android:layout_width="wrap_content"
+                android:id="@+id/tab"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:hint="Tap to Copy.."
+                android:textColorHint="@color/button_color"
+                android:textColor="@color/button_color"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_toRightOf="@+id/tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/share"
+
+                    android:tint="@color/button_color"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/camera_galary_layout"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/camera"
+                    android:background="@drawable/circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@mipmap/camera"
+                        android:padding="@dimen/_15sdp"
+                        android:tint="@color/txt_medium_color"
+
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/galary"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/circle"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@mipmap/gallery"
+                        android:tint="@color/txt_medium_color"
+                        android:padding="@dimen/_15sdp"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</layout>

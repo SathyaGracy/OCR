@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zeyaly Scanner(OCR)</string>
+    <string name="Next">Next</string>
+    <string name="cameraOn">Camera On</string>
+    <string name="open_Gallery">Open Gallery</string>
+    <string name="alert">Are you sure want to delete?</string>
+    <string name="txt">Instant Conversation to text with OCR, \n Don\'t worry about typing... </string>
+   <!-- <string name="rewarded_videos">ca-app-pub-7090206795134081/9120209644</string>-->
+   //demo
+    <string name="rewarded_videos">ca-app-pub-3940256099942544/5224354917</string>
+</resources>

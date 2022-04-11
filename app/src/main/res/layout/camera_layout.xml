@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/beforeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@mipmap/award"
+                android:layout_height="wrap_content">
+                <com.zeyaly.extractor.utils.CustomTextViewBold
+                    android:layout_width="@dimen/_30sdp"
+                    android:textColor="@color/colorPrimary"
+                  android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="100 Pts"
+                    android:layout_height="wrap_content">
+
+                </com.zeyaly.extractor.utils.CustomTextViewBold>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_60sdp"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_2sdp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_height="@dimen/_60sdp">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgcheck"
+                            android:layout_width="wrap_content"
+                            android:src="@mipmap/medal"
+                            android:tint="@color/blue"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                        <com.zeyaly.extractor.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:layout_below="@+id/imgcheck"
+
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="1000 Pts"
+                            android:layout_height="wrap_content">
+
+                        </com.zeyaly.extractor.utils.CustomTextViewBold>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/imgpart_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/img"></ImageView>
+
+                    <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="@string/txt"
+                        android:textColor="@color/text">
+
+                    </com.zeyaly.extractor.utils.CustomTextViewSemiLight>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/nextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpart_layout"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:background="@drawable/button_view_full_radius">
+
+                    <com.zeyaly.extractor.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/cameraOn"
+
+
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_15sdp">
+
+                    </com.zeyaly.extractor.utils.CustomTextViewBold>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/afterLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/actionBar"
+                android:layout_width="match_parent"
+                android:elevation="@dimen/_1sdp"
+                android:layout_height="?actionBarSize">
+                <RelativeLayout
+                    android:id="@+id/backArrow"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@mipmap/arrow"
+
+                        android:tint="@color/button_color"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <com.zeyaly.extractor.utils.CustomEditTextviewSemiLight
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/title"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="Title Here"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/txt_medium_color"
+                    android:layout_height="wrap_content">
+
+                </com.zeyaly.extractor.utils.CustomEditTextviewSemiLight>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/actionBar">
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_290sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/butn_shape">
+                    <RelativeLayout
+                        android:id="@+id/copyLayouts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:elevation="0dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@color/blue"
+                            android:layout_height="@dimen/_100sdp">
+                            <ImageView
+                                android:id="@+id/cameraImg"
+                                android:scaleType="fitXY"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </ImageView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.zeyaly.extractor.utils.CustomEditTextviewSemiLight
+                            android:layout_below="@+id/card"
+                            android:id="@+id/textContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Text Here...."
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/text"
+                            android:textSize="@dimen/_12sdp">
+
+                        </com.zeyaly.extractor.utils.CustomEditTextviewSemiLight>
+
+                    </RelativeLayout>
+
+                </androidx.core.widget.NestedScrollView>
+                <RelativeLayout
+                    android:id="@+id/editLayout"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/circle">
+
+                    <ImageView
+                        android:id="@+id/editImg"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/edit"
+                        android:tint="@color/txt_medium_color">
+
+                    </ImageView>
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/nex"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/copyLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        >
+                        <com.zeyaly.extractor.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/txt"
+
+                            android:text="Tap to Copy"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/_12sdp">
+
+                        </com.zeyaly.extractor.utils.CustomTextViewBold>
+
+                        <ImageView
+                            android:layout_toRightOf="@+id/txt"
+                            android:id="@+id/copyImg"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/copy"
+
+                            android:tint="@color/blue">
+
+                        </ImageView>
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/saveLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:paddingRight="@dimen/_30sdp"
+
+                        android:background="@drawable/button_lessres">
+
+                        <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/_15sdp"
+                            android:text="Save"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12sdp">
+
+                        </com.zeyaly.extractor.utils.CustomTextViewSemiLight>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shareLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:backgroundTint="@color/blue"
+                android:src="@mipmap/share"
+                android:tint="@color/colorPrimary">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

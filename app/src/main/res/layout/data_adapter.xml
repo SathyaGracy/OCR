@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+
+        android:layout_height="wrap_content">
+        <com.zeyaly.extractor.utils.CustomTextViewBold
+            android:id="@+id/text"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Tittle"
+
+            android:textColor="@color/txt_full_color"
+            android:textColorHint="@color/text"
+            android:textSize="@dimen/_12sdp"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+
+            android:layout_width="match_parent"
+            android:layout_below="@+id/text"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@drawable/butn_shape_white">
+
+            <com.zeyaly.extractor.utils.CustomTextViewSemiLight
+                android:id="@+id/textContent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Text Here...."
+
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textSize="@dimen/_12sdp">
+
+            </com.zeyaly.extractor.utils.CustomTextViewSemiLight>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/CloseLayout"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/circle">
+
+            <ImageView
+                android:id="@+id/closeImg"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/close"
+                android:tint="@color/txt_medium_color">
+
+            </ImageView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
